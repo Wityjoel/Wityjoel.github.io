@@ -1,0 +1,510 @@
+:root{
+    --main-color:#070707;
+    --black:#222;
+    --white:#fff;
+    --light-black:#777;
+    --light-white:#fff9;
+    --dark-bg:rgba(0,0,0,.7);
+    --light-bg:rgba(0, 0, 0, 0.288);
+    --border:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem #2223759f;
+    --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+    
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.yellow{
+    background: radial-gradient(#fff,#f9f5a3 );
+}
+.red{
+    background: radial-gradient(#fff,#f9a3a3 );
+}
+
+
+
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--black);
+    visibility: visible;
+    display: block;
+    z-index: 1000;
+    display:none;
+}
+
+section{
+    padding: 5rem 10%;
+}
+
+.heading-title{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px; 
+}
+nav{
+    flex: 0.99;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right:20px;
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    color: rgb(0, 0, 0);
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    
+    padding: 70px 70px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+
+.col-3 h4{
+    text-align: center;
+    font-size: 1.5rem;
+ 
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.col-3 h2{
+    font-size: 2rem;
+    line-height: 60px;
+    margin: 25px 0;
+    text-align: center;
+}
+.btn{
+    
+    display: inline-block;
+    background: #0d0d0e;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 15px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #53545728;
+}
+
+/* home about */
+.home-about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+   }
+   
+   .home-about .image{
+    flex:1 1 30rem;
+
+}
+.home-about .image img{
+    width: 100%;
+
+}
+   .home-about .readmore{
+    flex:1 1 41rem;
+
+}
+   .home-about .content{
+       flex:1 1 20rem;
+       padding: 3rem;
+       text-align: center;
+       background: var(--light-bg);
+   }
+   
+   .home-about .content h3{
+       font-size: 2rem;
+       color:var(--black);
+   }
+   
+   .home-about .content p{
+       font-size: 1.1rem;
+       padding: 1rem 0;
+       line-height: 2;
+       color: var(--black);
+   }
+
+
+   /* about */
+   .mission{
+    text-align: left;
+    padding-left:5%;
+    margin: 30px;
+}
+.vission{
+    text-align: left;
+    padding-left: 5%;
+    margin: 30px;
+
+}
+.offer{
+    margin-top: 80px;
+    padding: 100px;
+}
+
+.container p{
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--black);
+}
+
+
+
+
+
+/* home package */
+   .home-package{
+    background: var(--light-bg);
+    }
+   
+   .home-package .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+   gap: 2rem;
+   }
+   
+   .home-package .box-container .box{
+       height: 60%;
+       width: 100%;
+       border: var(--border);
+       box-shadow: var(--box-shadow);
+       background:var(--white);
+   
+   }
+   
+   .home-package .box-container .box:hover .image img{
+       transform: scale(1.1);
+   }
+   
+   
+   .home-package .box-container .box .image{
+       height: 15rem;
+       overflow: hidden;
+   
+   }
+   .home-package .box-container .box .image img{
+      height: 85%;
+      width: 100%;
+      
+       object-fit: cover;
+      transition: .2s linear;
+   }
+   .home-package .box-container .box .content{   
+       text-align: center;
+   }
+   
+   .home-package .box-container .box .content h3{
+       font-size: 1.5rem;
+       color: var(--black);
+   
+   }
+ 
+   
+   /* reviews */
+   .testimonial{
+    padding-top: 100px;
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 0px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor:pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial .col-3 img{
+    width: 80px;
+    margin-top: 20px;
+    border-radius: 60%;
+}
+
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 1px 10px;
+    color: #777;
+}
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+
+
+
+
+.reviews .slide .stars i{
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+/* resources */
+.resources {
+    background-color: var(--light-bg);
+}
+
+.resource{
+    text-align: center;
+}
+.resources .content{
+    text-align: center;
+    gap: 1rem;
+}
+
+
+
+.home-offer{
+    background: var(--light-bg);
+}
+
+.home-offer .content{
+    text-align: center;
+ 
+}
+
+/* brand */
+
+.brands{
+    margin: 50px;
+}
+.col-5{
+    width: 40px;
+}
+.col-5 img{
+    width: 70px;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+
+
+/* booking */
+
+.booking {
+    padding: 2rem;
+  
+}
+
+.booking .book-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.booking .book-form .flex  .inputBox{
+    flex:1 1 30rem;
+}
+
+.booking .book-form .flex .inputBox input{
+    width: 90%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.booking .book-form .flex .inputBox input:focus{
+    background: var(--black);
+    color: var(--white);
+}
+
+.booking .book-form .flex .inputBox input:focus::placeholder{
+    color: var(--light-white);
+}
+
+.booking .book-form .flex .inputBox span{
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.booking .book-form .btn{
+    margin-top: 2rem;
+}
+/*----footer----*/
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a; 
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer .containers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 3rem;
+}
+ 
+.footer-col-1{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    background-color: #f5f5f4;
+    width: 180px;
+    margin-bottom: 2px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+.footer .containers .footer-col-1 a{
+    color:white;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+}
+.footer .containers .footer-col-2 a{
+    color:white;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+}
+.footer .containers .footer-col-3 a{
+    color:white;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+}
+.footer .containers .footer-col-4 a{
+    color:white;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+    }
+.copyright{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+
+/* media queries */
+@media (max-width:1200px)
+{
+
+    section{
+        padding: 3rem 5%;
+    }
+}
+@media (max-width:991px)
+{
+    html{
+        font-size:55%;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width:768px)
+
+{
+    .header h1{
+        font-size: 4rem;
+    }
+
+    #menu-btn{
+        
+        display: inline-block;
+        transition: 2s linear;
+    }
+    
+    
+    .containers .navbar{
+        position: absolute;
+        top:99%; left: 0; right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        padding: 2rem;
+        transition: 2s linear;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+
+    .containers .navbar .active{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    }
+    .containers .navbar a{
+        display: block;
+        margin: 2rem;
+    }
+}
+@media (max-width:450px)
+{
+    html{
+        font-size:50%;
+    }
+    
+}
